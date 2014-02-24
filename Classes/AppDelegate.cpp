@@ -22,10 +22,10 @@ bool AppDelegate::applicationDidFinishLaunching() {
 	director->setDisplayStats(true);
 
 	// Setup the config
-	Config::getConfig()->screenWidth = eglView->getFrameSize().width;
-	Config::getConfig()->screenHeight = eglView->getFrameSize().height;
-	eglView->setDesignResolutionSize(Config::getConfig()->screenWidth, Config::getConfig()->screenHeight, ResolutionPolicy::kResolutionShowAll);
-	director->setContentScaleFactor(1536.0f / Config::getConfig()->screenHeight);
+	Config::getInstance()->screenWidth = eglView->getFrameSize().width;
+	Config::getInstance()->screenHeight = eglView->getFrameSize().height;
+//	eglView->setDesignResolutionSize(Config::getInstance()->screenWidth, Config::getInstance()->screenHeight, kResolutionNoBorder);
+	director->setContentScaleFactor(1536.0f / Config::getInstance()->screenHeight);
 
 	// set FPS. the default value is 1.0/60 if you don't call this
 	director->setAnimationInterval(1.0 / 60);
