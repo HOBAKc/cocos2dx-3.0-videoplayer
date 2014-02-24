@@ -31,7 +31,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 	director->setAnimationInterval(1.0 / 60);
 
 	// Setup Audio Manager
-	AudioManager::sharedManager()->playBG();
+	AudioManager::getInstance()->playBG();
 
 	// create a scene. it's an autorelease object
 	auto scene = HelloWorld::createScene();
@@ -47,8 +47,8 @@ void AppDelegate::applicationDidEnterBackground() {
 	Director::getInstance()->stopAnimation();
 
 	// if you use SimpleAudioEngine, it must be pause
-	SimpleAudioEngine::sharedEngine()->pauseBackgroundMusic();
-	SimpleAudioEngine::sharedEngine()->pauseAllEffects();
+	SimpleAudioEngine::getInstance()->pauseBackgroundMusic();
+	SimpleAudioEngine::getInstance()->pauseAllEffects();
 }
 
 // this function will be called when the app is active again
@@ -56,6 +56,6 @@ void AppDelegate::applicationWillEnterForeground() {
 	Director::getInstance()->startAnimation();
 
 	// if you use SimpleAudioEngine, it must resume here
-	SimpleAudioEngine::sharedEngine()->resumeBackgroundMusic();
-	SimpleAudioEngine::sharedEngine()->resumeAllEffects();
+	SimpleAudioEngine::getInstance()->resumeBackgroundMusic();
+	SimpleAudioEngine::getInstance()->resumeAllEffects();
 }
