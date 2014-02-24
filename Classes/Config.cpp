@@ -7,3 +7,12 @@
 //
 
 #include "Config.h"
+
+static Config *instance = NULL;
+
+Config *Config::getInstance() {
+	if (!instance) {
+		instance = new Config();
+	}
+	return instance;
+};
