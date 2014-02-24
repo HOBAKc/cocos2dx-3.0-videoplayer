@@ -3,6 +3,8 @@
 
 #include "cocos2d.h"
 
+using namespace cocos2d;
+
 class HelloWorld : public cocos2d::Layer
 {
 public:
@@ -13,7 +15,7 @@ public:
     virtual bool init();  
     
     // a selector callback
-    void menuCloseCallback(Object* pSender);
+    void menuCallback(Object* pSender);
     
     // implement the "static create()" method manually
     CREATE_FUNC(HelloWorld);
