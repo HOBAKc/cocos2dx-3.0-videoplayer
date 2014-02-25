@@ -911,4 +911,31 @@ static CCEAGLView *__view = 0;
     }
 }
 
+
+//-(void)playVideo:(NSString *)path {
+//	NSURL *url = [NSURL fileURLWithPath:path];
+//
+//	dpPlayer = [[MPMoviePlayerController alloc] initWithContentURL:url];
+//	[[dpPlayer view] setFrame:CGRectMake(0, 0, self.frame.size.height, self.frame.size.width)];
+//	[dpPlayer setFullscreen:YES];
+//	[dpPlayer setScalingMode:MPMovieScalingModeNone];
+//	[dpPlayer setControlStyle:MPMovieControlStyleDefault];
+//	[self addSubview:[dpPlayer view]];
+//	[dpPlayer play];
+//
+//	[[NSNotificationCenter defaultCenter] addObserver:self
+//																					 selector:@selector(removeVideo)
+//																							 name:MPMoviePlayerPlaybackStateDidChangeNotification object:nil];
+//}
+//
+//-(void)removeVideo {
+//	if ([dpPlayer playbackState] == MPMoviePlaybackStateStopped) {
+//		[[dpPlayer view] removeFromSuperview];
+//		dpPlayer = nil;
+//
+//		[[NSNotificationCenter defaultCenter] removeObserver:self name:MPMoviePlayerLoadStateDidChangeNotification object:nil];
+//	}
+//}
+
+
 @end

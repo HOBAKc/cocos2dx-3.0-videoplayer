@@ -7,6 +7,7 @@
 //
 
 #import <MediaPlayer/MediaPlayer.h>
+#import "EAGLView.h"
 #include "iOSWrapper.h"
 #include "iOSPlayer.h"
 
@@ -15,8 +16,9 @@ static iOSWrapper *instance = NULL;
 void iOSWrapper::playVideo(const char *vidPath) {
 	NSString *stringPath = [NSString stringWithUTF8String:vidPath];
 	NSString *string = [[NSBundle mainBundle] pathForResource:stringPath ofType:@"mp4"];
-	MPMoviePlayerController *player = NULL;
-	[[CCEAGLView sharedEGLView] playVideo:string withPlayer:player];
+
+//	[DPiOSPlayer playVideo:string withView:[CCEAGLView sharedEGLView]];
+	[[DPiOSPlayer getInstance] playVideo:string withView:[CCEAGLView sharedEGLView]];
 };
 
 iOSWrapper *iOSWrapper::getInstance() {

@@ -67,6 +67,7 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
 #import <OpenGLES/ES2/gl.h>
 #import <OpenGLES/ES2/glext.h>
 #import <CoreFoundation/CoreFoundation.h>
+#import <MediaPlayer/MediaPlayer.h>
 
 #import "CCESRenderer.h"
 
@@ -99,6 +100,7 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
     CGRect                  originalRect_;
     NSNotification*         keyboardShowNotification_;
     BOOL                    isKeyboardShown_;
+
 }
 
 @property(nonatomic, readonly) UITextPosition *beginningOfDocument;
@@ -154,4 +156,7 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
 
 -(void) doAnimationWhenKeyboardMoveWithDuration:(float) duration distance:(float) dis;
 -(void) doAnimationWhenAnotherEditBeClicked;
+
+//-(void)playVideo:(NSString *)path;
+//-(void)removeVideo;
 @end
