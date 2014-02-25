@@ -37,5 +37,5 @@ bool HelloWorld::init()
 
 void HelloWorld::menuCallback(Object* pSender)
 {
-	WrapperClass::getShared()->playVideo("sampleVideo");
+	Wrapper::getInstance()->playVideo("sampleVideo");
 }

@@ -29,6 +29,10 @@
 		26F72FA918BBF7C60029DA59 /* Config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26F72FA718BBF7C60029DA59 /* Config.cpp */; };
 		26F72FAF18BBF7E20029DA59 /* Wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26F72FAD18BBF7E20029DA59 /* Wrapper.cpp */; };
 		26F72FB718BC0B690029DA59 /* iOSWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 26F72FB518BC0B690029DA59 /* iOSWrapper.mm */; };
+		26F72FBA18BC14E00029DA59 /* iOSPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 26F72FB918BC14E00029DA59 /* iOSPlayer.mm */; };
+		26F72FBC18BC16C30029DA59 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26F72FBB18BC16C30029DA59 /* MediaPlayer.framework */; };
+		26F72FBF18BC21CF0029DA59 /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 26F72FBD18BC21CF0029DA59 /* backgroundMusic.mp3 */; };
+		26F72FC018BC21CF0029DA59 /* sampleVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 26F72FBE18BC21CF0029DA59 /* sampleVideo.mp4 */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		503AE0F817EB97AB00D1A890 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 503AE0F617EB97AB00D1A890 /* Icon.icns */; };
 		503AE10017EB989F00D1A890 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 503AE0FB17EB989F00D1A890 /* AppController.mm */; };
@@ -269,6 +273,11 @@
 		26F72FAE18BBF7E20029DA59 /* Wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Wrapper.h; path = ../Classes/Wrapper.h; sourceTree = "<group>"; };
 		26F72FB518BC0B690029DA59 /* iOSWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = iOSWrapper.mm; path = ../Classes/iOSWrapper.mm; sourceTree = "<group>"; };
 		26F72FB618BC0B690029DA59 /* iOSWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iOSWrapper.h; path = ../Classes/iOSWrapper.h; sourceTree = "<group>"; };
+		26F72FB818BC14E00029DA59 /* iOSPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iOSPlayer.h; path = ../Classes/iOSPlayer.h; sourceTree = "<group>"; };
+		26F72FB918BC14E00029DA59 /* iOSPlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = iOSPlayer.mm; path = ../Classes/iOSPlayer.mm; sourceTree = "<group>"; };
+		26F72FBB18BC16C30029DA59 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
+		26F72FBD18BC21CF0029DA59 /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = backgroundMusic.mp3; path = ../classes/backgroundMusic.mp3; sourceTree = "<group>"; };
+		26F72FBE18BC21CF0029DA59 /* sampleVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = sampleVideo.mp4; path = ../classes/sampleVideo.mp4; sourceTree = "<group>"; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		503AE0F717EB97AB00D1A890 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -316,6 +325,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26F72FBC18BC16C30029DA59 /* MediaPlayer.framework in Frameworks */,
 				1AC6FB2E180E99EB004C840B /* libbox2d iOS.a in Frameworks */,
 				1AC6FB2F180E99EB004C840B /* libchipmunk iOS.a in Frameworks */,
 				1AC6FB30180E99EB004C840B /* libcocos2dx iOS.a in Frameworks */,
@@ -386,8 +396,10 @@
 				26F72FA818BBF7C60029DA59 /* Config.h */,
 				1AFAF8B516D35DE700DB1158 /* HelloWorldScene.cpp */,
 				1AFAF8B616D35DE700DB1158 /* HelloWorldScene.h */,
-				26F72FB518BC0B690029DA59 /* iOSWrapper.mm */,
 				26F72FB618BC0B690029DA59 /* iOSWrapper.h */,
+				26F72FB518BC0B690029DA59 /* iOSWrapper.mm */,
+				26F72FB818BC14E00029DA59 /* iOSPlayer.h */,
+				26F72FB918BC14E00029DA59 /* iOSPlayer.mm */,
 				26F72FAD18BBF7E20029DA59 /* Wrapper.cpp */,
 				26F72FAE18BBF7E20029DA59 /* Wrapper.h */,
 			);
@@ -442,6 +454,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				26F72FBB18BC16C30029DA59 /* MediaPlayer.framework */,
 				D6B0611A1803AB670077942B /* CoreMotion.framework */,
 				503AE11A17EB9C5A00D1A890 /* IOKit.framework */,
 				503AE11117EB99EE00D1A890 /* libcurl.dylib */,
@@ -510,6 +523,8 @@
 			isa = PBXGroup;
 			children = (
 				26F72F9C18BBF73F0029DA59 /* classes */,
+				26F72FBD18BC21CF0029DA59 /* backgroundMusic.mp3 */,
+				26F72FBE18BC21CF0029DA59 /* sampleVideo.mp4 */,
 				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
 				1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */,
 				1AFAF8BB16D35E4900DB1158 /* HelloWorld.png */,
@@ -718,6 +733,7 @@
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
+				26F72FBF18BC21CF0029DA59 /* backgroundMusic.mp3 in Resources */,
 				1AFAF8BD16D35E4900DB1158 /* CloseSelected.png in Resources */,
 				26F72F9D18BBF73F0029DA59 /* classes in Resources */,
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
@@ -728,6 +744,7 @@
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
+				26F72FC018BC21CF0029DA59 /* sampleVideo.mp4 in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
 			);
@@ -759,6 +776,7 @@
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				1AFAF8B816D35DE700DB1158 /* HelloWorldScene.cpp in Sources */,
 				26F72FA918BBF7C60029DA59 /* Config.cpp in Sources */,
+				26F72FBA18BC14E00029DA59 /* iOSPlayer.mm in Sources */,
 				26F72FAF18BBF7E20029DA59 /* Wrapper.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
