@@ -10,24 +10,11 @@
 #import <EAGLView.h>
 #include "AudioManager.h"
 
-//@interface DPiOSPlayer : CCEAGLView {
-//	MPMoviePlayerController *dpPlayer;
-//}
-//
-//- (void)playVideo:(NSString *)path;
-//- (void)removeVideo;
-//
-//@property (copy) MPMoviePlayerController *dpPlayer;
-//
-//@end
-
-
-
 @interface DPiOSPlayer : NSObject  {
 	MPMoviePlayerController *dpPlayer;
 }
 
-- (void)playVideo:(NSString *)path withView:(UIView *)view;
+- (void)playVideo:(NSURL *)url withView:(UIView *)view;
 - (void)exitFullscreen;
 - (void)videoEnded;
 - (void)removeVideo;

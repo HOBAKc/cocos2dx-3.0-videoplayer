@@ -81,6 +81,15 @@ public:
 	*/
 	virtual void applicationScreenSizeChanged(int newWidth, int newHeight);
 
+//********************************************************************************
+// Video Playing Functions
+// Move these functions to a custom class or class extension
+//********************************************************************************
+
+	void playVideo();
+
+//********************************************************************************
+
 protected:
     static Application * sm_pSharedApplication;
 };

@@ -32,6 +32,9 @@ bool AppDelegate::applicationDidFinishLaunching() {
 	// Setup the config
 	Config::getInstance()->screenWidth = eglView->getFrameSize().width;
 	Config::getInstance()->screenHeight = eglView->getFrameSize().height;
+	eglView->setDesignResolutionSize(Config::getInstance()->screenWidth,
+																	 Config::getInstance()->screenHeight,
+																	 ResolutionPolicy::NO_BORDER);
 	director->setContentScaleFactor(1536.0f / Config::getInstance()->screenHeight);
 
 	// Set the frame rate

@@ -156,4 +156,19 @@ void Application::applicationScreenSizeChanged(int newWidth, int newHeight) {
 
 }
 
+//********************************************************************************
+// Video Playing Functions
+// Move these functions to a custom class or class extension
+//********************************************************************************
+
+void CCApplication::playVideo() {
+	JniMethodInfo minfo;
+	if (JniHelper::getStaticMethodInfo(minfo, "com/dillpixel/videoPlayer", "playVideo", "(Ljava/lang/String;)V")) {
+		jstring StringArg1 = minfo->env->NewStringUTF("sampleVideo.mp4")
+	}
+};
+
+//********************************************************************************
+
+
 NS_CC_END
