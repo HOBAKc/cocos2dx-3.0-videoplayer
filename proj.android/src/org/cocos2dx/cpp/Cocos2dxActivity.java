@@ -29,4 +29,8 @@ public class Cocos2dxActivity extends NativeActivity{
 		// getWindow().setFormat(PixelFormat.TRANSLUCENT);
 		
 	}
+	
+	public static void playVideo(final String msg) {
+	    System.out.println("Play Video in JAVA class in invoked");
+	}
 }

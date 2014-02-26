@@ -161,10 +161,14 @@ void Application::applicationScreenSizeChanged(int newWidth, int newHeight) {
 // Move these functions to a custom class or class extension
 //********************************************************************************
 
-void CCApplication::playVideo() {
+void Application::playVideo(const char * path) {
 	JniMethodInfo minfo;
 	if (JniHelper::getStaticMethodInfo(minfo, "com/dillpixel/videoPlayer", "playVideo", "(Ljava/lang/String;)V")) {
-		jstring StringArg1 = minfo->env->NewStringUTF("sampleVideo.mp4")
+//		jstring StringArg1 = minfo->env->NewStringUTF(path);
+		jstring StringArg1 = minfo.env->NewStringUTF("sampleVideo.mp4");
+		minfo.env->CallStaticVoidMethod(minfo.classID, minfo.methodID, StringArg1);
+		minfo.env->DeleteLocalRef(StringArg1);
+		minfo.env->DeleteLocalRef(minfo.classID);
 	}
 };
 

@@ -86,7 +86,7 @@ public:
 // Move these functions to a custom class or class extension
 //********************************************************************************
 
-	void playVideo();
+	void playVideo(const char * path);
 
 //********************************************************************************
 

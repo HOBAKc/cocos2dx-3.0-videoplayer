@@ -15,7 +15,7 @@ void Wrapper::playVideo(const char *vidPath) {
 #if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
 	iOSWrapper::getInstance()->playVideo(vidPath);
 #elif CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID
-//	CCApplication::getInstance()->playVideo(vidPath);
+	CCApplication::getInstance()->playVideo(vidPath);
 #endif
 };
 
