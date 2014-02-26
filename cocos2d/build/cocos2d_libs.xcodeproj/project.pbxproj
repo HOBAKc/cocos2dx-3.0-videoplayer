@@ -2793,6 +2793,7 @@
 		1AD71EEF180E27CF00808F54 /* CCPhysicsSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPhysicsSprite.h; sourceTree = "<group>"; };
 		1AE3C842184F14F700CF29B5 /* CCValue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCValue.cpp; path = ../base/CCValue.cpp; sourceTree = "<group>"; };
 		1AE3C843184F14F700CF29B5 /* CCValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCValue.h; path = ../base/CCValue.h; sourceTree = "<group>"; };
+		261C8A5B18BD60130025ED2C /* android */ = {isa = PBXFileReference; lastKnownFileType = folder; path = android; sourceTree = "<group>"; };
 		2AC795D318628672005EC8E1 /* BoundingBoxAttachment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BoundingBoxAttachment.cpp; sourceTree = "<group>"; };
 		2AC795D418628672005EC8E1 /* BoundingBoxAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoundingBoxAttachment.h; sourceTree = "<group>"; };
 		2AC795D51862867D005EC8E1 /* Event.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Event.cpp; sourceTree = "<group>"; };
@@ -5278,6 +5279,7 @@
 		46A16A5A1807B038005B8026 /* platform */ = {
 			isa = PBXGroup;
 			children = (
+				261C8A5B18BD60130025ED2C /* android */,
 				46A16AA31807B038005B8026 /* ios */,
 				46A16AC71807B038005B8026 /* mac */,
 				A04583EF189053B500E32FE8 /* desktop */,
