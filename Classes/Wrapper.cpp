@@ -2,18 +2,16 @@
 //  Wrapper.cpp
 //  videoPlayer
 //
-//  Created by Dill Pixel 2 on 2/24/14.
-//
+//  Created by radio8712 on 2/24/14.
+//  Copyright (c) 2014 Dill Pixel. All rights reserved.
 //
 
 #include "Wrapper.h"
-//#define CC_TARGET_PLATFORM CC_PLATFORM_ANDROID
-
 
 static Wrapper *instance = NULL;
 
 void Wrapper::playVideo(const char *vidPath) {
-//	AudioManager::getInstance()->stopBG();
+	AudioManager::getInstance()->stopBG();
 #if CC_TARGET_PLATFORM == CC_PLATFORM_IOS
 	iOSWrapper::getInstance()->playVideo(vidPath);
 #elif CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID
@@ -22,8 +20,8 @@ void Wrapper::playVideo(const char *vidPath) {
 };
 
 Wrapper *Wrapper::getInstance() {
-//	if (!instance) {
-//		instance = new Wrapper();
-//	}
+	if (!instance) {
+		instance = new Wrapper();
+	}
 	return instance;
 };

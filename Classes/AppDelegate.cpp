@@ -1,7 +1,15 @@
+//
+//  AppDelegate.cpp
+//  videoPlayer
+//
+//  Created by radio8712 on 2/24/14.
+//  Copyright (c) 2014 Dill Pixel. All rights reserved.
+//
+
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
 
-USING_NS_CC;
+#define STATS false
 
 AppDelegate::AppDelegate() {
 
@@ -12,50 +20,45 @@ AppDelegate::~AppDelegate() {
 }
 
 bool AppDelegate::applicationDidFinishLaunching() {
-	// initialize director
+	// Setup the director
 	auto director = Director::getInstance();
 	auto eglView = EGLView::getInstance();
 
 	director->setOpenGLView(eglView);
 
 	// turn on display FPS
-	director->setDisplayStats(true);
+	director->setDisplayStats(STATS);
 
 	// Setup the config
 	Config::getInstance()->screenWidth = eglView->getFrameSize().width;
 	Config::getInstance()->screenHeight = eglView->getFrameSize().height;
-//	eglView->setDesignResolutionSize(Config::getInstance()->screenWidth, Config::getInstance()->screenHeight, kResolutionNoBorder);
 	director->setContentScaleFactor(1536.0f / Config::getInstance()->screenHeight);
 
-	// set FPS. the default value is 1.0/60 if you don't call this
+	// Set the frame rate
 	director->setAnimationInterval(1.0 / 60);
 
-	// Setup Audio Manager
+	// Setup the audio manager
 	AudioManager::getInstance()->playBG();
 
-	// create a scene. it's an autorelease object
+	// Setup the scene
 	auto scene = HelloWorld::createScene();
-
-	// run
 	director->runWithScene(scene);
 
 	return true;
 }
 
-// This function will be called when the app is inactive. When comes a phone call,it's be invoked too
 void AppDelegate::applicationDidEnterBackground() {
+	// Pause app on interrupt
 	Director::getInstance()->stopAnimation();
 
-	// if you use SimpleAudioEngine, it must be pause
 	SimpleAudioEngine::getInstance()->pauseBackgroundMusic();
 	SimpleAudioEngine::getInstance()->pauseAllEffects();
 }
 
-// this function will be called when the app is active again
 void AppDelegate::applicationWillEnterForeground() {
+	// Resume from interruption
 	Director::getInstance()->startAnimation();
 
-	// if you use SimpleAudioEngine, it must resume here
 	SimpleAudioEngine::getInstance()->resumeBackgroundMusic();
 	SimpleAudioEngine::getInstance()->resumeAllEffects();
 }

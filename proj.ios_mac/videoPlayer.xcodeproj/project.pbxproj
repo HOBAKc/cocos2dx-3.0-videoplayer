@@ -24,7 +24,6 @@
 		1AFAF8BE16D35E4900DB1158 /* HelloWorld.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AFAF8BB16D35E4900DB1158 /* HelloWorld.png */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		26F72F9D18BBF73F0029DA59 /* classes in Resources */ = {isa = PBXBuildFile; fileRef = 26F72F9C18BBF73F0029DA59 /* classes */; };
 		26F72FA618BBF7BD0029DA59 /* AudioManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26F72FA418BBF7BD0029DA59 /* AudioManager.cpp */; };
 		26F72FA918BBF7C60029DA59 /* Config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26F72FA718BBF7C60029DA59 /* Config.cpp */; };
 		26F72FAF18BBF7E20029DA59 /* Wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26F72FAD18BBF7E20029DA59 /* Wrapper.cpp */; };
@@ -264,7 +263,6 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* videoPlayer iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "videoPlayer iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		26F72F9C18BBF73F0029DA59 /* classes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = classes; path = "../../../Downloads/cocos2dx-videoplayer-ios-master/classes"; sourceTree = "<group>"; };
 		26F72FA418BBF7BD0029DA59 /* AudioManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AudioManager.cpp; path = ../Classes/AudioManager.cpp; sourceTree = "<group>"; };
 		26F72FA518BBF7BD0029DA59 /* AudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioManager.h; path = ../Classes/AudioManager.h; sourceTree = "<group>"; };
 		26F72FA718BBF7C60029DA59 /* Config.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Config.cpp; path = ../Classes/Config.cpp; sourceTree = "<group>"; };
@@ -522,7 +520,6 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				26F72F9C18BBF73F0029DA59 /* classes */,
 				26F72FBD18BC21CF0029DA59 /* backgroundMusic.mp3 */,
 				26F72FBE18BC21CF0029DA59 /* sampleVideo.mp4 */,
 				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
@@ -735,7 +732,6 @@
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
 				26F72FBF18BC21CF0029DA59 /* backgroundMusic.mp3 in Resources */,
 				1AFAF8BD16D35E4900DB1158 /* CloseSelected.png in Resources */,
-				26F72F9D18BBF73F0029DA59 /* classes in Resources */,
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
 				1AFAF8BE16D35E4900DB1158 /* HelloWorld.png in Resources */,

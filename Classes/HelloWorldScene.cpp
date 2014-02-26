@@ -1,27 +1,25 @@
-#include "HelloWorldScene.h"
+//
+//  HelloWorldScene.cpp
+//  videoPlayer
+//
+//  Created by radio8712 on 2/24/14.
+//  Copyright (c) 2014 Dill Pixel. All rights reserved.
+//
 
-USING_NS_CC;
+#include "HelloWorldScene.h"
 
 Scene* HelloWorld::createScene()
 {
-	// 'scene' is an autorelease object
 	auto scene = Scene::create();
-	
-	// 'layer' is an autorelease object
 	auto layer = HelloWorld::create();
 
-	// add layer as a child to scene
 	scene->addChild(layer);
 
-	// return the scene
 	return scene;
 }
 
-// on "init" you need to initialize your instance
 bool HelloWorld::init()
 {
-	//////////////////////////////
-	// 1. super init first
 	if ( !Layer::init() )
 	{
 			return false;
@@ -34,8 +32,7 @@ bool HelloWorld::init()
 	return true;
 }
 
-
 void HelloWorld::menuCallback(Object* pSender)
 {
-//	Wrapper::getInstance()->playVideo("sampleVideo");
+	Wrapper::getInstance()->playVideo("sampleVideo");
 }

@@ -2,15 +2,13 @@
 //  iOSWrapper.h
 //  videoPlayer
 //
-//  Created by Dill Pixel 2 on 2/24/14.
-//
+//  Created by radio8712 on 2/24/14.
+//  Copyright (c) 2014 Dill Pixel. All rights reserved.
 //
 
 #ifndef __videoPlayer__iOSWrapper__
 #define __videoPlayer__iOSWrapper__
 
-//#include <MediaPlayer/MediaPlayer.h>
-//#include <EAGLView.h>
 #include "cocos2d.h"
 #include "AudioManager.h"
 #include "Config.h"

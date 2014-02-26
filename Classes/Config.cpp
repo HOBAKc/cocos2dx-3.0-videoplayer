@@ -2,8 +2,8 @@
 //  Config.cpp
 //  videoPlayer
 //
-//  Created by Dill Pixel 2 on 2/24/14.
-//
+//  Created by radio8712 on 2/24/14.
+//  Copyright (c) 2014 Dill Pixel. All rights reserved.
 //
 
 #include "Config.h"
