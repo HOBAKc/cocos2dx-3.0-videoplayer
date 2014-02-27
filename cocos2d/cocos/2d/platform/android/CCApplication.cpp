@@ -163,7 +163,7 @@ void Application::applicationScreenSizeChanged(int newWidth, int newHeight) {
 
 void Application::playVideo(const char * path) {
 	JniMethodInfo minfo;
-	if (JniHelper::getStaticMethodInfo(minfo, "com/dillpixel/videoPlayer", "playVideo", "(Ljava/lang/String;)V")) {
+	if (JniHelper::getStaticMethodInfo(minfo, "com.dillpixel.videoplayer.VideoPlayer", "playVideo", "(Ljava/lang/String;)V")) {
 //		jstring StringArg1 = minfo->env->NewStringUTF(path);
 		jstring StringArg1 = minfo.env->NewStringUTF("sampleVideo.mp4");
 		minfo.env->CallStaticVoidMethod(minfo.classID, minfo.methodID, StringArg1);
